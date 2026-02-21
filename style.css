@@ -48,3 +48,54 @@ button[aria-pressed="true"]{background:#0b4e85}
 
 /* foco visível para teclado */
 button:focus, a:focus{outline:3px solid #ffd54f}
+
+
+/* FOCO NO MOBILE */
+
+.exercise-images {
+  margin-bottom: 2rem;
+}
+
+.exercise-images h3 {
+  margin-bottom: 0.2rem;
+}
+
+.exercise-images .small {
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+/* Grid de imagens */
+.image-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+/* Feedback visual */
+.image-grid a:active img {
+  transform: scale(0.97);
+}
+
+/* Colunas */
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Mobile: tudo em coluna */
+@media (max-width: 768px) {
+  .cols-2,
+  .cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
