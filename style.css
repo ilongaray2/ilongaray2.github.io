@@ -21,7 +21,7 @@ color:var(--text);
 .container{max-width:var(--maxwidth);margin:20px auto;padding:0 16px}
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{left:16px;top:16px;background:#fff;padding:8px;border-radius:6px}
-.site-header{background:linear-gradient(180deg,#ffffffcc,#f0f6ff);padding:18px 0;margin-bottom:12px}
+.site-header{background:linear-gradient(180deg,#000,#f0f6ff);padding:18px 0;margin-bottom:12px}
 .site-header h1{margin:0;font-size:1.6rem}
 .subtitle{margin:6px 0 0;color:var(--muted)}
 .controls{margin-top:10px;display:flex;gap:8px}
