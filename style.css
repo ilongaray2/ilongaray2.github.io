@@ -37,9 +37,39 @@ button[aria-pressed="true"]{background:#0b4e85}
 
 
 /* contraste alto */
-.high-contrast{background:#000;color:#fff}
-.high-contrast .card{background:#111}
-.high-contrast a{color:#ffdd57}
+.high-contrast {
+  background: #000;
+  color: #fff;
+}
+
+.high-contrast .card {
+  background: #111;
+}
+
+.high-contrast a {
+  color: #ffdd57;
+}
+
+/* 🔥 CORREÇÃO DO HEADER */
+.high-contrast .site-header {
+  background: #000; /* remove o gradiente */
+}
+
+.high-contrast .site-header h1,
+.high-contrast .site-header h2,
+.high-contrast .site-header .subtitle {
+  color: #fff;
+}
+
+/* Botões no contraste */
+.high-contrast button {
+  background: #ffdd57;
+  color: #000;
+}
+
+.high-contrast button[aria-pressed="true"] {
+  background: #ffc107;
+}
 
 
 /* responsivo */
