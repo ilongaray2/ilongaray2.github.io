@@ -27,19 +27,14 @@ setFont(v)
 
 contraste.addEventListener('click', ()=>{
   const body = document.body
-  const pressed = contraste.getAttribute('aria-pressed') === 'true'
+  const ativo = body.classList.toggle('high-contrast')
 
-  if(!pressed){
-    body.classList.add('high-contrast')
-    contraste.setAttribute('aria-pressed','true')
-    contraste.textContent = '🌙 Escuro'
-    contraste.setAttribute('aria-label','Desativar modo escuro')
-  } else {
-    body.classList.remove('high-contrast')
-    contraste.setAttribute('aria-pressed','false')
-    contraste.textContent = '☀️ Claro'
-    contraste.setAttribute('aria-label','Ativar modo escuro')
-  }
+  contraste.setAttribute('aria-pressed', ativo ? 'true' : 'false')
+  contraste.textContent = ativo ? '🌙 Escuro' : '☀️ Claro'
+  contraste.setAttribute(
+    'aria-label',
+    ativo ? 'Desativar modo escuro' : 'Ativar modo escuro'
+  )
 })
 
 
