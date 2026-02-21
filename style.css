@@ -79,6 +79,14 @@ button[aria-pressed="true"]{background:#0b4e85}
 /* foco visível para teclado */
 button:focus, a:focus{outline:3px solid #ffd54f}
 
+/* contraste */
+
+button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Arial,
+               "Apple Color Emoji", "Segoe UI Emoji",
+               "Segoe UI Symbol", sans-serif;
+}
 
 /* FOCO NO MOBILE */
 
